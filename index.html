@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#informacion" onclick="seleccionar()">INFORMACION</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Edwin-circulo.png" alt="">
+            </div>
+            <h1>Edwin Hoyos</h1>
+            <h2>Ingeniero de sistemas - Desarrollador</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/edwin.jairxxnickelback" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/edwinjair08/?next=%2F" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/edwin-hoyos-torres-073a17147/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/zlewis07" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informacion -->
+    <section id="informacion" class="informacion">
+        <div class="contenido-seccion">
+            <h2>Información</h2>
+            <p>
+                ¡Hola! mi nombre es <span>Edwin Jair Hoyos Torres.</span>
+                Ingeniero de sistemas egresado de la Universidad de Cartagena. Cuento con experiencia destacada
+                en las áreas de la informatica, el desarrollo de software y la gestión de herramientas ofimáticas.                  
+                Mi compromiso con el trabajo colaborativo y la responsabilidad estan determinados como pilares 
+                esenciales que guían mi camino hacia el éxito. Actualmente me dedico apasionadamente al desarrollo de 
+                software a través de soluciones tecnológicas innovadoras. Me desenvuelvo con destreza en los 
+                lenguajes de C#, .NET, SQL, HTML, CSS, JavaScript y Vue.js.
+            </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombres:</strong>
+                            Edwin Jair
+                        </li>
+                        <li>
+                            <strong>Apellidos:</strong>
+                            Hoyos Torres
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            3005184024
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            edwinzlewis07@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website:</strong>
+                            zlewis07.github.io/miportafolio
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            El carmen Bol, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Desarrollador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Actividades favoritas</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-church"></i>
+                            <span>IGLESIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-readme"></i>
+                            <span>INGLES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+<section class="habilidades" id="habilidades">
+    <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+
+            <!-- Habilidades tecnicas -->
+            <div class="col">
+                <h3>Habilidades Profesionales</h3>
+                <div class="habilidad">
+                    <span>Javascript & Vue.js</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>HTML & CSS</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>C# & .NET</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>SQL Server</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>87%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>Ofimática</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades profesionales -->
+            <div class="col">
+                <h3>Habilidades Laborales</h3>
+                <div class="habilidad">
+                    <span>Comunicación</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>Creatividad</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>Dedicación</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <span>Gestion de proyectos</span>
+                    <div class="barra-habilidad">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Curriculum -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Bachiller académico</h4>
+                    <span class="titulo">Colegio Antonio Ricaurte</span>
+                    <span class="fecha">2005 - 2010</span>
+                    <p>
+                        Bachiller académico con una sólida formación en diversas áreas del conocimiento. 
+                        Durante mi educación secundaria, destaqué por mi compromiso con el aprendizaje, 
+                        obteniendo resultados académicos destacados y demostrando habilidades en la resolución
+                        de problemas.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Ingeniero de sistemas</h4>
+                    <span class="titulo">Universidad de Cartagena</span>
+                    <span class="fecha">2011 - 2017</span>
+                    <p>
+                        Ingeniero de sistemas de la universidad de Cartagena con experiencia sólida en diseño 
+                        y desarrollo de sistemas informáticos. Enfocado en soluciones tecnológicas innovadoras
+                        y con habilidades analíticas destacadas. Comprometido con la mejora continua y la 
+                        eficiencia en cada proyecto.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Estudios complementarios</h4>
+                    <span class="titulo">Sena Sofia Plus</span>
+                    <span class="fecha">2015 - 2020</span>
+                    <p>
+                        Profesional graduado con estudios en ofimática y mantenimiento de equipos. Destaco por 
+                        mi habilidad para utilizar eficientemente herramientas ofimáticas y mantener equipos 
+                        en óptimas condiciones. Mi enfoque se centra en la aplicación de conocimientos para 
+                        contribuir al éxito en entornos tecnológicos. 
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <h4>Asesor comercial</h4>
+                    <span class="titulo">Claro S.A Colombia</span>
+                    <span class="fecha">2016 - 2017</span>
+                    <p>
+                        Asesor Comercial en Claro S.A. Especializado en atención al cliente y ventas, 
+                        lideré iniciativas para mejorar la satisfacción del cliente y cumplir con los 
+                        objetivos comerciales establecidos por la empresa. Mi enfoque proactivo y orientado 
+                        al cliente contribuyó al éxito en Claro S.A.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Asegurador de calidad</h4>
+                    <span class="titulo">Fundación voces del mañana</span>
+                    <span class="fecha">2019 - 2023</span>
+                    <p>
+                        Asegurador de Calidad responsable de mantener la información actualizada e ingresarla 
+                        eficientemente a la plataforma. Implementé procesos para garantizar la precisión y 
+                        confiabilidad de los datos. Mi enfoque de trabajo contribuyó al cumplimiento en el 
+                        manejo de la información en el CDI.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Desarrollador</h4>
+                    <span class="titulo">Trabajador independiente</span>
+                    <span class="fecha">2021 - Actualidad</span>
+                    <p>
+                        Desarrollador de software con experiencia en proyectos independientes. Especializado 
+                        en el diseño y desarrollo de soluciones tecnológicas personalizadas. He colaborado con 
+                        diversos clientes, aportando creatividad y habilidades técnicas en la creación de 
+                        sitios web y aplicaciones. 
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="abrirLightbox('img/e1.png', 'Proyecto de escritorio', 'C# + .Net + SqlServer')">
+                    <img src="img/e1.png" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto de escritorio</h3>
+                        <p>C# + .Net + SqlServer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto de escritorio</h3>
+                        <p>C# + .Net + SqlServer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aplicaciones de escritorio</h3>
+                        <p>C# + .Net</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creacion de APIs</h3>
+                        <p>C# + .Net + Entity framework</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación web(pruebas)</h3>
+                        <p>Vue.js + Bootstrap + Api .Net</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación web(pruebas)</h3>
+                        <p>Vue.js + Vuetify + Api .Net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expandir la vista de los proyectos -->
+
+    <div id="lightbox" class="lightbox">
+        <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+        <button class="cerrar-boton" onclick="cerrarLightbox()">Cerrar</button>
+        <img id="imagen-lightbox" class="imagen-lightbox" alt="Imagen Lightbox">
+        <div class="descripcion-lightbox">
+            <h3 id="titulo-lightbox"></h3>
+            <p id="descripcion-lightbox"></p>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="miFormulario" action="https://formsubmit.co/6c9071b92511f600cb13ee6033dc2c75" method="POST">
+                        <input type="text" placeholder="Nombre" name="nombre">
+                        <input type="text" placeholder="Número de telefono" name="telefono">
+                        <input type="text" placeholder="Asunto" name="asunto">
+                        <textarea name="mensaje" id="" cols="30" rows="12" placeholder="Mensaje"></textarea>
+                        <button>
+                        Enviar Mensaje a Gmail <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                        </button>
+                        <input type="hidden" name="_next" value="https://zlewis07.github.io/miportafolio/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Ubicacion-e.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, El carmen de Bolívar
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Whatsapp: 3005184024
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: edwinzlewis07@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <p>&copy; 2023 Copyright - Cristo te ama</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
