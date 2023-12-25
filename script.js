@@ -65,7 +65,7 @@ document.querySelectorAll("#nav ul li a").forEach(function (enlace) {
 window.addEventListener("scroll", function () {
     efectoHabilidades();
     actualizarSeccionActiva();
-});
+},{passive: true});
 
 // Seccion para expandir la imagen de los proyectos realizados
 let lightboxVisible = false;

@@ -60,7 +60,7 @@ html{
 /* Inicio */
 .inicio{
     background: linear-gradient(to top, rgba(87, 95, 99, 0.8), rgba(30, 35, 38, 1)),
-                url(img/Mi\ fondo.jpg);
+                url(img/Mi\ fondo.webp);
     background-size: cover;
     background-position: center;  
     height: 640px;
@@ -504,7 +504,6 @@ html{
 
 /* Contacto */
 .contacto{
-    background-image: url(img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
