@@ -115,16 +115,6 @@ window.addEventListener("scroll", function () {
     cerrarLightbox();
 });
 
-// Aumento de imagen con doble click en pantallas pequeñas
-document.addEventListener('DOMContentLoaded', function(){
-    var caja = document.querySelector('.lightbox');
-    var imagen = caja.querySelector('img');
-
-    imagen.addEventListener('dblclick', function(){
-        imagen.classList.toggle('enlarged');
-    });
-});
-
 // Validaciones finales del proyecto
 document.getElementById('miFormulario').addEventListener('submit', function(event){
     event.preventDefault();
