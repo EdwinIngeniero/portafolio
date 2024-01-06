@@ -726,7 +726,7 @@ footer p{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    z-index: 99;
 }
 
 .lightbox img {
@@ -734,16 +734,6 @@ footer p{
     max-height: 80%;
     display: block;
     margin: 0 auto;
-}
-
-.cerrar {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 30px;
-    color: #cf2727;
-    cursor: pointer;
-    z-index: 3;
 }
 
 .descripcion-lightbox {
@@ -786,7 +776,7 @@ footer p{
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        z-index: 2;
+        z-index: 99;
     }
     
     .lightbox img {
